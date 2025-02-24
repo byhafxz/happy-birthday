@@ -5,6 +5,9 @@ html {
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
 }
 
 .container {
@@ -296,4 +299,43 @@ body {
     font-size: 1.5rem;
     font-weight: lighter;
   }
+
+  @media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduce font size for mobile */
+    }
+
+    .container {
+        width: 90%; /* Use more screen space */
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em; /* Make headings smaller */
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%; /* Make buttons full-width on small screens */
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    .content {
+        width: 100%;
+        padding: 5px;
+    }
+}
+
 }
